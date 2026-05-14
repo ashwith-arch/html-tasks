@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Task 4 - Registration Form</title>
+</head>
+<body>
+
+<h1>Student Registration Form</h1>
+
+<form action="#" method="post">
+
+<fieldset>
+<legend>Personal Information</legend>
+
+<label>Full Name:</label><br>
+<input type="text" name="fullname" placeholder="Enter full name" required minlength="3" maxlength="50" autofocus autocomplete="on">
+<br><br>
+
+<label>Email:</label><br>
+<input type="email" name="email" placeholder="example@email.com" required autocomplete="on">
+<br><br>
+
+<label>Password:</label><br>
+<input type="password" name="password" placeholder="Min 8 characters" required minlength="8" maxlength="20" pattern= "0123456789" autocomplete="off">
+<br><br>
+
+<label>Phone:</label><br>
+<input type="tel" name="phone" placeholder="9876543210" pattern="[0-9]{10}" required>
+<br><br>
+
+<label>Date of Birth:</label><br>
+<input type="date" name="dob" required min="1990-01-01" max="2026-12-31">
+<br><br>
+
+<label>Registration ID:</label><br>
+<input type="text" name="regid" value="REG-2024-001" readonly>
+<br><br>
+
+</fieldset>
+
+<br>
+
+<fieldset>
+<legend>Academic Information</legend>
+
+<label>College Name:</label><br>
+<input type="text" name="college" list="collegelist" placeholder="Type college name">
+<datalist id="collegelist">
+<option value="Parul University">
+<option value="JNTU Hyderabad">
+<option value="University of Hyderabad">
+<option value="NIT Warangal">
+<option value="IIT Hyderabad">
+<option value="Kakatiya University">
+</datalist>
+<br><br>
+
+<label>Select Course:</label><br>
+<select name="course" required>
+<option value="">-- Select Course --</option>
+<option value="btech">B.Tech</option>
+<option value="mtech">M.Tech</option>
+<option value="bsc">B.Sc</option>
+<option value="msc">M.Sc</option>
+<option value="bca">BCA</option>
+<option value="mca">MCA</option>
+</select>
+<br><br>
+
+<label>Select Year:</label><br>
+<select name="year" required>
+<option value="">-- Select Year --</option>
+<option value="1">1st Year</option>
+<option value="2">2nd Year</option>
+<option value="3">3rd Year</option>
+<option value="4">4th Year</option>
+</select>
+<br><br>
+
+<label>Percentage:</label><br>
+<input type="number" name="percentage" placeholder="Enter percentage" min="0" max="100" step="0.1" required>
+<br><br>
+
+<label>Portfolio URL:</label><br>
+<input type="url" name="website" placeholder="https://yoursite.com">
+<br><br>
+
+</fieldset>
+
+<br>
+
+<fieldset>
+<legend>Preferences</legend>
+
+<label>Class Time:</label><br>
+<input type="time" name="classtime" min="08:00" max="18:00">
+<br><br>
+
+<label>Experience Level (0-10):</label><br>
+<input type="range" name="experience" min="0" max="10" step="1" value="5">
+<br><br>
+
+<label>Favorite Color:</label><br>
+<input type="color" name="favcolor" value="#008000">
+<br><br>
+
+<label>Upload Photo:</label><br>
+<input type="file" name="photo" accept="image/*">
+<br><br>
+
+<label>Subjects:</label><br>
+<input type="checkbox" name="subjects" value="math"> Mathematics<br>
+<input type="checkbox" name="subjects" value="science"> Science<br>
+<input type="checkbox" name="subjects" value="computers" checked> Computers<br>
+<input type="checkbox" name="subjects" value="english"> English<br>
+<br>
+
+<label>Gender:</label><br>
+<input type="radio" name="gender" value="male" required> Male<br>
+<input type="radio" name="gender" value="female"> Female<br>
+<input type="radio" name="gender" value="other"> Other<br>
+<br>
+
+<label>About Yourself:</label><br>
+<textarea name="about" rows="5" cols="40" maxlength="300" placeholder="Write about yourself (max 300 characters)"></textarea>
+<br><br>
+
+<label>Referral Code:</label><br>
+<input type="text" name="referral" placeholder="Not available" disabled>
+<br><br>
+
+</fieldset>
+
+<br>
+<input type="submit" value="Submit Form">
+&nbsp;&nbsp;
+<input type="reset" value="Reset Form">
+
+</form>
+
+</body>
+</html>
